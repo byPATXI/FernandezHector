@@ -14,10 +14,10 @@ public class TestFecha {
 		mes = Integer.parseInt(entrada.readLine());
 		System.out.println("Introduce un año: ");
 		ano = Integer.parseInt(entrada.readLine());
-		Fecha fecha1 = new Fecha(dia, mes, ano);
-		if (fecha1.valida())
+		Fecha f1 = new Fecha(dia, mes, ano);
+		if (f1.valida())
 			System.out.println("La fecha: " + dia + "/" + mes + "/" + ano + " es válida");
 		else
-			System.out.println("La fecha: " + dia + "/" + mes + "/" + ano + "no es válida");
-		}
+			System.out.println("La fecha: " + dia + "/" + mes + "/" + ano + "NO es válida");
+	}
 }
