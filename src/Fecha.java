@@ -1,18 +1,21 @@
 
 public class Fecha {
+	private int dia;
+	private int mes;
+	private int ano;
 
-	private int dia, mes, ano;
-
-
-	public Fecha(int dia, int mes, int anio) {
+	public Fecha(int dia, int mes, int ano) {
 		this.dia = dia;
 		this.mes = mes;
-		this.ano = anio;
+		this.ano = ano;
 	}
 	
-	private boolean bisiesto() {
+	private boolean bisiesto ( ) {
+		if ( (ano % 400 == 0) || ( (ano % 4 == 0) && (ano % 100 != 0) ) )
 		return true;
-	}
+		else return false;
+		}
+
 
 	private int diasMes() {
 		int diasMes = 0;
